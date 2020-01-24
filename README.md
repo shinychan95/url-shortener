@@ -8,8 +8,13 @@
 - 브라우저에서 shortening URL을 입력하면 원래 URL로 리다이렉트
 - 도메인은 localhost로 처리
 
+### 참고
+- [링크](https://codeburst.io/creating-custom-url-shortener-with-nodejs-de10bbbb89c7)
+
 ### 추가한 기능
 - NGINX를 통한 URL 리다이렉트
+- URL이 유효한 지 검사
+- 귀여운 프론트엔드 사진 전환
 
 ### 피드백
 - Shortening ID 변환에 있어서 난수 생성이 아닌 base 62 사용
@@ -20,3 +25,6 @@
 - var, char: 가변 길이
 - 데이터 1억개 되었을 때도 효율적이려면: Encoding 된 데이터를 디코드해서 바로 key 접근
 - 누가봐도 이해할 수 있는 코드에 대해서는 주석 생략
+
+### 자세한 정리
+- [블로그](https://velog.io/@shinychan95)
