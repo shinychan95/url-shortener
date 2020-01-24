@@ -26,8 +26,10 @@
 - client, Server
   - ```npm install```
   - ```npm start```
-- MongoDB, NGINX
-  - 서버 실행
+- MongoDB
+  - ```mongod``` (MongoDB 서버 실행)
+- NGINX
+  - ```nginx.exe```
 
 ### 피드백(리팩토링 완료)
 - Shortening ID 변환에 있어서 난수 생성이 아닌 base 62 사용
