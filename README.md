@@ -16,7 +16,7 @@
 - URL이 유효한 지 검사
 - 귀여운 프론트엔드 사진 전환
 
-### 피드백
+### 피드백(리팩토링 완료)
 - Shortening ID 변환에 있어서 난수 생성이 아닌 base 62 사용
 - DB: Default object id generator가 아니라, 오름차순 숫자 index
 - DB: shortUrl 데이터 생성 시 localhost 제거 (굳이 필요 없음)
