@@ -1,6 +1,6 @@
 # URL-Shortener
 
-### 기능
+### 최소 기능
 - URL 입력 폼 제공
 - 단축 후 결과 출력
 - 동일한 URL을 입력할 경우 항상 동일한 shortening 결과 값이 나와야 함
@@ -15,6 +15,19 @@
 - NGINX를 통한 URL 리다이렉트
 - URL이 유효한 지 검사
 - 귀여운 프론트엔드 사진 전환
+
+### 실행
+- 실행에 앞서 Node.js, MongoDB, NGINX 설치 필요
+  - node: v10.16.0
+  - npm: v6.9.0
+  - nodemon: v1.19.1
+  - MongoDB shell version v4.2.2
+  - NGINX: 1.16.1
+- client, Server
+  - ```npm install```
+  - ```npm start```
+- MongoDB, NGINX
+  - 서버 실행
 
 ### 피드백(리팩토링 완료)
 - Shortening ID 변환에 있어서 난수 생성이 아닌 base 62 사용
