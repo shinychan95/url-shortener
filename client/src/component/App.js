@@ -46,15 +46,15 @@ class App extends Component {
       this.setState({ showLoading: true, showShortenUrl: false });
       let reqObj = {
         originalUrl: this.state.originalUrl,
-        shortBaseUrl: constants.baseUrl
       };
       createShortUrl(reqObj)
         .then(json => {
+          console.log(json.data)
           setTimeout(() => {
             this.setState({
               showLoading: false,
               showShortenUrl: true,
-              shortenUrl: json.data.shortUrl
+              shortenUrl: constants.baseUrl + '/' + json.data.shortened
             });
           }, 0);
         })

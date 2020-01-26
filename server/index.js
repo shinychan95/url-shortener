@@ -12,7 +12,7 @@ const connectOptions = {
   useUnifiedTopology: true
 };
 
-// Connect to MongoDB 
+// Connect to MongoDB - URI에 해당하는 DB가 없다면 생성하는 것 같다. 기본 설정인 듯.
 mongoose.connect(mongoURI, connectOptions, (err, db) => 
 { 
   if (err) console.log(`Error`, err); 
@@ -35,6 +35,7 @@ app.use(function(req, res, next) {
     next();
   }
 });
+
 app.use(bodyParser.json());
 
 require("./models/UrlShorten")
